@@ -10,10 +10,10 @@ class AssetController
     public function __invoke(string $file)
     {
         switch ($file) {
-            case 'app.css':
-                return $this->pretendResponseIsFile(__DIR__ . '/../../../dist/app.css', 'text/css; charset=utf-8');
-            case 'app.css.map':
-                return $this->pretendResponseIsFile(__DIR__ . '/../../../dist/app.css.map', 'text/css; charset=utf-8');
+            case 'theme.css':
+                return $this->pretendResponseIsFile(__DIR__ . '/../../../dist/theme.css', 'text/css; charset=utf-8');
+            case 'theme.css.map':
+                return $this->pretendResponseIsFile(__DIR__ . '/../../../dist/theme.css.map', 'text/css; charset=utf-8');
             case 'app.js':
                 return $this->pretendResponseIsFile(__DIR__ . '/../../../dist/app.js', 'application/javascript; charset=utf-8');
             case 'app.js.map':

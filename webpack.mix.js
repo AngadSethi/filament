@@ -20,3 +20,9 @@ mix.postCss('packages/admin/resources/css/app.css', 'packages/admin/dist', [
 ]).options({
     processCssUrls: false,
 })
+
+mix.postCss('packages/theme/theme.css', 'packages/admin/dist', [
+    tailwindcss('packages/theme/tailwind.config.js'),
+]).options({
+    processCssUrls: false,
+})

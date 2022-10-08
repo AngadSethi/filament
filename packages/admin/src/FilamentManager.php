@@ -345,8 +345,8 @@ class FilamentManager
         }
 
         $url = $this->theme ?? route('filament.asset', [
-            'id' => get_asset_id('app.css'),
-            'file' => 'app.css',
+            'id' => get_asset_id('theme.css'),
+            'file' => 'theme.css',
         ]);
 
         return new HtmlString("<link rel=\"stylesheet\" href=\"{$url}\" />");
