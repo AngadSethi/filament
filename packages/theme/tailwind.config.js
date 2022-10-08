@@ -1,4 +1,4 @@
-const colors = require("tailwindcss/colors");
+const colors = require('tailwindcss/colors')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -9,7 +9,7 @@ module.exports = {
         './packages/support/resources/**/*.blade.php',
         './packages/tables/resources/**/*.blade.php',
     ],
-    darkMode: "class",
+    darkMode: 'class',
     theme: {
         extend: {
             colors: {
@@ -17,7 +17,7 @@ module.exports = {
                 success: colors.green,
                 warning: colors.amber,
                 danger: colors.rose,
-            }
+            },
         },
     },
     plugins: [
